@@ -39,7 +39,7 @@ class TestCase extends BaseTestCase
         return ['OpenCC' => Facade::class];
     }
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 

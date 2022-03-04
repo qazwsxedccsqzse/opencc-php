@@ -1,48 +1,53 @@
 <?php
-return PhpCsFixer\Config::create()
+
+$finder = PhpCsFixer\Finder::create()
+    ->exclude('somedir')
+    ->notPath('src/Symfony/Component/Translation/Tests/fixtures/resources.php')
+    ->in(__DIR__);
+
+return (new PhpCsFixer\Config())
     ->setRules([
         '@PSR2' => true,
-        'binary_operator_spaces' => true,
-        'blank_line_after_opening_tag' => true,
-        'compact_nullable_typehint' => true,
-        'declare_equal_normalize' => true,
-        'lowercase_cast' => true,
-        'lowercase_static_reference' => true,
-        'new_with_braces' => true,
-        'no_unused_imports' => true,
-        'no_blank_lines_after_class_opening' => true,
-        'no_leading_import_slash' => true,
-        'no_whitespace_in_blank_line' => true,
-        'ordered_class_elements' => [
-            'order' => [
-                'use_trait',
-            ],
+        '@Symfony' => true,
+        '@PhpCsFixer' => true,
+        'class_definition' => [
+            'single_line' => true,
         ],
-        'ordered_imports' => [
-            'imports_order' => [
-                'class',
-                'function',
-                'const',
-            ],
-            'sort_algorithm' => 'none',
+        'method_argument_space' => [
+            'on_multiline' => 'ensure_fully_multiline',
         ],
-        'return_type_declaration' => true,
-        'short_scalar_cast' => true,
-        'single_blank_line_before_namespace' => true,
-        'single_trait_insert_per_statement' => true,
-        'ternary_operator_spaces' => true,
-        'unary_operator_spaces' => true,
-        'visibility_required' => [
-            'elements' => [
-                'const',
-                'method',
+        'cast_spaces' => [
+            'space' => 'none',
+        ],
+        'concat_space' => [
+            'spacing' => 'one',
+        ],
+        'phpdoc_align' => [
+            'align' => 'vertical',
+            'tags' => [
+                'param',
                 'property',
+                'property-read',
+                'property-write',
+                'return',
+                'throws',
+                'type',
+                'var',
+                'method',
             ],
+        ],
+        'phpdoc_order' => true,
+        'phpdoc_to_comment' => false,
+        'ternary_to_null_coalescing' => true,
+        'no_useless_else' => true,
+        'no_useless_return' => true,
+        'ordered_class_elements' => true,
+        'ordered_imports' => true,
+        'array_syntax' => [
+            'syntax' => 'short',
+        ],
+        'multiline_whitespace_before_semicolons' => [
+            'strategy' => 'no_multi_line',
         ],
     ])
-    ->setFinder(
-        PhpCsFixer\Finder::create()
-            ->exclude('vendor')
-            ->in([__DIR__.'/src/',__DIR__.'/tests/'])
-    )
-;
+    ->setFinder($finder);
