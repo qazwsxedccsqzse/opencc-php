@@ -6,9 +6,9 @@
  * Time: 13:58
  */
 
-namespace AlphaSnow\OpenCC\Tests;
+namespace qazwsxedccsqzse\OpenCC\Tests;
 
-use AlphaSnow\OpenCC\Command;
+use qazwsxedccsqzse\OpenCC\Command;
 
 class CommandTest extends TestCase
 {

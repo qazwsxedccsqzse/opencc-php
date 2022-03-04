@@ -6,9 +6,9 @@
  * Time: 17:32
  */
 
-namespace AlphaSnow\OpenCC\Tests;
+namespace qazwsxedccsqzse\OpenCC\Tests;
 
-use AlphaSnow\OpenCC\OpenCC;
+use qazwsxedccsqzse\OpenCC\OpenCC;
 
 class FacadeTest extends TestCase
 {

@@ -17,7 +17,7 @@ $possibleBinaries = [
 foreach ($possibleBinaries as $possibleBinary) {
     if ($possibleBinary && is_file($possibleBinary) && is_executable($possibleBinary)) {
         try {
-            \AlphaSnow\OpenCC\Command::create($possibleBinary);
+            \qazwsxedccsqzse\OpenCC\Command::create($possibleBinary);
             define('OPENCC_BINARY', $possibleBinary);
             break;
         } catch (Exception $e) {

@@ -28,21 +28,21 @@
     },
     "autoload": {
         "psr-4": {
-            "AlphaSnow\\OpenCC\\": "src/"
+            "qazwsxedccsqzse\\OpenCC\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AlphaSnow\\OpenCC\\Tests\\": "tests/"
+            "qazwsxedccsqzse\\OpenCC\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "AlphaSnow\\OpenCC\\ServiceProvider"
+                "qazwsxedccsqzse\\OpenCC\\ServiceProvider"
             ],
             "aliases": {
-                "OpenCC": "AlphaSnow\\OpenCC\\Facade"
+                "OpenCC": "qazwsxedccsqzse\\OpenCC\\Facade"
             }
         }
     },

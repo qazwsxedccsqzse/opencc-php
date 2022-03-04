@@ -6,10 +6,10 @@
  * Time: 17:32
  */
 
-namespace AlphaSnow\OpenCC\Tests;
+namespace qazwsxedccsqzse\OpenCC\Tests;
 
-use AlphaSnow\OpenCC\Command;
-use AlphaSnow\OpenCC\OpenCC;
+use qazwsxedccsqzse\OpenCC\Command;
+use qazwsxedccsqzse\OpenCC\OpenCC;
 
 class OpenCCTest extends TestCase
 {

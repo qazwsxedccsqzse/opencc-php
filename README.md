@@ -28,18 +28,18 @@
     [
         'providers' => [
             // ...
-            AlphaSnow\OpenCC\ServiceProvider::class,
+            qazwsxedccsqzse\OpenCC\ServiceProvider::class,
         ],
         'aliases' => [
             // ...
-            'OpenCC' => AlphaSnow\OpenCC\Facade::class,
+            'OpenCC' => qazwsxedccsqzse\OpenCC\Facade::class,
         ]
     ];
     ```
 2. 发布配置文件
 
     ```bash
-    php artisan vendor:publish --provider="AlphaSnow\OpenCC\ServiceProvider"
+    php artisan vendor:publish --provider="qazwsxedccsqzse\OpenCC\ServiceProvider"
     ```
     
 3. 修改配置文件 `config/opencc.php`
@@ -76,8 +76,8 @@ print_r($traditional);
 ### 其他应用
 
 ```php
-use AlphaSnow\OpenCC\Command;
-use AlphaSnow\OpenCC\OpenCC;
+use qazwsxedccsqzse\OpenCC\Command;
+use qazwsxedccsqzse\OpenCC\OpenCC;
 
 $command = new Command('/usr/bin/opencc','/usr/share/opencc');
 $openCC = new OpenCC($command);

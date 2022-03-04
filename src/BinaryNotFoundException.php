@@ -6,7 +6,7 @@
  * Time: 13:54
  */
 
-namespace AlphaSnow\OpenCC;
+namespace qazwsxedccsqzse\OpenCC;
 
 use RuntimeException;
 

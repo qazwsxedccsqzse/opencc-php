@@ -6,7 +6,7 @@
  * Time: 17:24
  */
 
-namespace AlphaSnow\OpenCC;
+namespace qazwsxedccsqzse\OpenCC;
 
 use Neutron\TemporaryFilesystem\Manager;
 
