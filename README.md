@@ -17,7 +17,7 @@
 
 2. 第二步,使用`Composer`安装`opencc-php`
     ```bash
-    composer require alphasnow/opencc-php
+    composer require qazwsxedccsqzse/opencc-php
     ```
 
 ## 应用配置
