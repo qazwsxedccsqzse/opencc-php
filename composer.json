@@ -1,6 +1,6 @@
 {
-    "name": "alphasnow/opencc-php",
-    "description": "OpenCC made with PHP",
+    "name": "qazwsxedccsqzse/opencc-php",
+    "description": "OpenCC made with PHP forked from https://github.com/alphasnow/opencc",
     "keywords": [
         "opencc",
         "php",
@@ -16,15 +16,15 @@
     ],
     "require": {
         "php": ">=7.0",
-        "symfony/process": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+        "symfony/process": "^2.7 || ^3.0 || ^4.0 || ^5.0 || ^6.0",
         "neutron/temporary-filesystem": "^3.0"
     },
     "require-dev": {
         "mockery/mockery": "~1.0",
-        "phpunit/phpunit": "~6.0",
-        "friendsofphp/php-cs-fixer": "^2.16",
+        "phpunit/phpunit": "^9.5",
+        "friendsofphp/php-cs-fixer": "^3.6",
         "phpstan/phpstan": "^0.12.82",
-        "orchestra/testbench": "3.5.*"
+        "orchestra/testbench": "^7.1"
     },
     "autoload": {
         "psr-4": {

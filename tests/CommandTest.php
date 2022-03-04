@@ -32,10 +32,12 @@ class CommandTest extends TestCase
             ->getCommand()
         ;
 
+        $configPath = $this->configPath ? ($this->configPath . DIRECTORY_SEPARATOR . $config) : $config;
         $expected = $this->binaryFile.
             ' --input "'.$input.'"'.
             ' --output "'.$output.'"'.
-            ' --config "'.$this->configPath.'/'.$config.'"';
+            ' --config "'. $configPath . '"';
+
         $expected = str_replace('\\', '/', $expected);
 
         $this->assertEquals($expected, $result);
